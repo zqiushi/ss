@@ -1,0 +1,12 @@
+version: '2'
+services:
+  ss:
+    image: oddrationale/docker-shadowsocks
+    container_name: ss
+    ports:
+      - "${LISTEN_PORT1}:1026"
+      - "${LISTEN_PORT2}:1026"
+      - "${LISTEN_PORT3}:1026"
+      - "${LISTEN_PORT4}:1026"
+      - "${LISTEN_PORT5}:1026"
+    entrypoint: /usr/local/bin/ssserver -s 0.0.0.0 -p 1026 -k ${PASSWORD} -m aes-256-cfb

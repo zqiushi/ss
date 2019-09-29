@@ -1,0 +1,2 @@
+sh -x init.sh
+
