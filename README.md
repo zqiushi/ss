@@ -3,9 +3,10 @@
 ## run zhe first time 
 `sh -x init.sh` 
 
+.env  file
 
-it's in .env file 
-listen port and password 
+- listen port 
+- password 
 
 
 ```
