@@ -3,13 +3,24 @@
 ## run zhe first time 
 `sh -x init.sh` 
 
-.env  file
+```
+.
+├── .env       #config file  port and pasword  in it
+├── .env_bak   #config back file
+├── .git
+├── .gitignore
+├── README.md  
+├── docker-compose.yaml  #docker-compose file
+└── init.sh      #run file 
 
-- listen port 
-- password 
+```
+
+
+
 
 
 ```
+#.env file
 LISTEN_PORT1=10241
 LISTEN_PORT2=10242
 LISTEN_PORT3=10243
