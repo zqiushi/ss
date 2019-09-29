@@ -4,7 +4,7 @@ if [ ! -f .env ]; then
 fi
 
 #stop service
-#    docker-compose -f docker-compose.yaml down
+docker-compose -f docker-compose.yaml down
 
 #start service
 docker-compose -f docker-compose.yaml up -d

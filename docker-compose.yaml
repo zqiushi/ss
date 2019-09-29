@@ -2,7 +2,7 @@ version: '2'
 services:
   ss:
     image: oddrationale/docker-shadowsocks
-    container_name: ss
+    #container_name: ss
     ports:
       - "${LISTEN_PORT1}:1026"
       - "${LISTEN_PORT2}:1026"
