@@ -3,14 +3,14 @@
 
 if [ ! -f .env ]; then
  cp .env_bak .env        #copy .envconfig file
- echo "/usr/local/bin/docker-compose -f /opt/docker-compose.yaml up -d" >> /etc/rc.d/rc.local
+ yum install -y epel-release  docker-ce  docker-compose
  ln -s docker-compose.yaml /opt/docker-compose.yaml
- yum install -y docker docker-compose
+ echo "/usr/bin/docker-compose -f /opt/docker-compose.yaml up -d" >> /etc/rc.d/rc.local
 fi
 
 #stop service
-/usr/local/bin/docker-compose -f /opt/docker-compose.yaml down
+/usr/bin/docker-compose -f /opt/docker-compose.yaml down
 
 #start service
-/usr/local/bin/docker-compose -f /opt/docker-compose.yaml up -d
+/usr/bin/docker-compose -f /opt/docker-compose.yaml up -d
 
