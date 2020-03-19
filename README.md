@@ -29,3 +29,7 @@ LISTEN_PORT5=10245
 PASSWORD=Happy2019
 ```
 
+#加速内核使用，安装，然后重启服务
+
+
+wget --no-check-certificate https://github.com/teddysun/across/raw/master/bbr.sh && chmod +x bbr.sh && ./bbr.sh
